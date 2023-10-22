@@ -4,16 +4,25 @@
 
 using namespace std;
 
+/*
+ * This is simple realization of queue using two stacks
+ * And also some king of cli...
+ * Made as updated version for queue_from_stacks
+ */
+
 class Queue {
  public:
     stack<int> stpush;
     stack<int> stpop;
+
     void push(int elem) {
         stpush.push(elem);
         cout << "ok";
     }
+
     int pop() {
         int t;
+
         if (stpop.empty()) {
             while (!stpush.empty()) {
                 t = stpush.top();
@@ -26,8 +35,10 @@ class Queue {
         stpop.pop();
         return t;
     }
+
     int front() {
         int t;
+
         if (stpop.empty()) {
             while (!stpush.empty()) {
                 t = stpush.top();
@@ -37,9 +48,11 @@ class Queue {
         }
         return stpop.top();
     }
+
     int size() {
         return stpop.size() + stpush.size();
     }
+
     void clear() {
         stpop = stack<int> ();
         stpush = stack<int> ();
@@ -53,7 +66,7 @@ int main() {
     string comm;
     Queue q;
 
-    while (true) {
+    while (true) { // Client
         cin >> comm;
 
         if (comm == "push") {

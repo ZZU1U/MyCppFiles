@@ -1,6 +1,10 @@
 #include <fstream>
 #include <iostream>
 
+/*
+ * Example of reading and writing files in c++
+ */
+
 using namespace std;
 
 int main() {
@@ -20,5 +24,5 @@ int main() {
 
   fout << a / b;
 
-  fout.close(); // Dont't forget
+  fout.close(); // Don't forget!
 }
