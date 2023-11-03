@@ -9,6 +9,8 @@ using namespace std;
  * And we need to pop another one
  */
 
+// If we want to know min we calcul as in stack when we add and when we move to pop_stack
+
 struct que {
   stack<int> stadd;
   stack<int> stdel;

@@ -24,7 +24,7 @@ using namespace std;
  * If you need some comments you can check gistogram_max_s.cpp (min_rights, min_lefts and gistogram_area source)
  */
 
-vector<int> min_rights(vector<int> vec, int n) {
+vector<int> min_rights(vector<int>& vec, int n) {
     vector<int> ans(n);
     vector<int> stack;
 
@@ -45,7 +45,7 @@ vector<int> min_rights(vector<int> vec, int n) {
     return ans;
 }
 
-vector<int> min_lefts(vector<int> vec, int n) {
+vector<int> min_lefts(vector<int>& vec, int n) {
     vector<int> ans(n);
     vector<int> stack;
 
@@ -66,7 +66,7 @@ vector<int> min_lefts(vector<int> vec, int n) {
     return ans;
 }
 
-int gistogram_area(int n, vector<int> v) {
+int gistogram_area(int n, vector<int>& v) {
   vector<int> ans_rights = min_rights(v, n);
 
   vector<int> ans_lefts = min_lefts(v, n);
