@@ -1,65 +1,50 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-// We find nearest number to given in list of numbers
-// It seems easy to code, but i had some troubles, so I'm better to save this
+#define all(x) x.begin(), x.end()
+#define ll long long
 
-int binary_search_ans_in_l(vector<int> &v, int target) {
-  int l = 0;
-  int r = (int) v.size();
-  int m;
+#define LOCAL
 
-  while (r - l > 1) {
-    m = (r + l) / 2;
-    if (target >= v[m]) {
-      l = m;
+
+void solve() {
+  int n, m;
+  cin >> m >> n;
+  int sst = 0;
+  while (n && m) {
+    sst = sst % 3;
+    if (sst == 2) {
+      m--;
+      cout << 'B';
     } else {
-      r = m;
+      n--;
+      cout << 'G';
     }
+    sst++;
   }
-
-  return v[l];
-}
-
-int binary_search_ans_in_r(vector<int> &v, int target) {
-  int l = -1;
-  int r = (int) v.size() - 1;
-  int m;
-
-  while (r - l > 1) {
-    m = (r + l) / 2;
-    if (target > v[m]) {
-      l = m;
-    } else {
-      r = m;
-    }
+  while (m--) {
+    cout << 'B';
   }
-
-  return v[r];
+  while (n--) {
+    cout << 'G';
+  }
 }
 
 int main() {
-  int n, k, a, b;
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+  cout.tie(nullptr);
+  cout << fixed << setprecision(20);
 
-  cin >> n >> k;
+#ifdef LOCAL
+  freopen("input.txt", "r", stdin);
+  freopen("output.txt", "w", stdout);
+#endif
 
-  vector<int> v(n);
+  int t = 1;
 
-  for (int i = 0; i < n; cin >> v[i++]) { }
-
-  for (int i = 0; i < k; i++) {
-    cin >> n;
-
-    a = binary_search_ans_in_l(v, n);
-    b = binary_search_ans_in_r(v, n);
-
-    if (abs(n - a) <= abs(n - b)) {
-      cout << a;
-    } else {
-      cout << b;
-    }
-    cout << '\n';
+  while (t--) {
+    solve();
   }
 }

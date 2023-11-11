@@ -10,12 +10,14 @@ void solve() {
 }
 
 int main() {
-  #ifdef DEBUG
-  // Ввод с фай
-  #endif
+#ifdef LOCAL
+  freopen("input.txt", "r", stdin);
+  freopen("output.txt", "w", stdout);
+#endif
 
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
+  cout.tie(nullptr);
 
   int t = 1;
 
