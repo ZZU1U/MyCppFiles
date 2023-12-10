@@ -1,9 +1,13 @@
 #include <iostream>
 #include <vector>
 
+/*
+ * This is a simple realization of binary search in c++
+ */
+
 using namespace std;
 
-unsigned int binary_search_ans_in_l(vector<int> &v, int target) {
+unsigned int binary_search_ans_in_l(vector<int> &v, int target) { // so long name
   unsigned int l = 0;
   unsigned int r = v.size();
   unsigned int m;

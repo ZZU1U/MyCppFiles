@@ -1,3 +1,0 @@
-/home/glrb/Code/C++/Sirius/cmake-build-debug/CMakeFiles/Sirius.dir
-/home/glrb/Code/C++/Sirius/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/glrb/Code/C++/Sirius/cmake-build-debug/CMakeFiles/rebuild_cache.dir

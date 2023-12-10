@@ -1,4 +1,0 @@
-#+title: Notes for c++
-#+author: Gleb Anohin
-
-* Notes

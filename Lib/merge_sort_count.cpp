@@ -7,9 +7,8 @@
  *
  * The input is velocities of each racer
  *
- * The output is count of switches
+ * We solve it using the merge sort and counting swaps during sort
  *
- * We solve it using the merge sort
  */
 
 using namespace std;

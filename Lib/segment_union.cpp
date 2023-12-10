@@ -2,6 +2,15 @@
 
 #define all(x) x.begin(), x.end()
 
+/*
+ * This is code for collapsing segments that overlaps each over to a signle segment
+ *
+ * Input is number of segments and their cords
+ *
+ * Output is number of collapsed segments and their cords
+ *
+ */
+
 using namespace std;
 
 void solve() {

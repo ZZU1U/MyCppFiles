@@ -2,15 +2,16 @@
 #include <vector>
 #include <algorithm>
 
-using namespace std;
-
 /*
  * The task is to find maximum area under a gistogram
  *
  * We have an array with heights of each column in gistogram
  *
  * Output is the maximum area
+ *
  */
+
+using namespace std;
 
 
 vector<long long> min_rights(vector<long long> vec, long long n) {

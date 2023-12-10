@@ -1,5 +1,9 @@
 #include <bits/stdc++.h>
 
+/*
+ * This is
+ */
+
 using namespace std;
 
 void solve() {
@@ -33,8 +37,6 @@ void solve() {
       cout << v[d.front()] << ' ';
     }
   }
-
-
 }
 
 int main() {

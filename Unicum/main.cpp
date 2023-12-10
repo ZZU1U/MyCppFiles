@@ -7,24 +7,10 @@ using namespace std;
 
 typedef long long ll;
 
-ll gcd(ll a, ll b) {
-  if (a > b)
-    swap(a, b);
-
-  while (a > 0) {
-    b = b % a;
-    swap(a, b);
-  }
-
-  return b;
-}
-
 void solve() {
-  ll a, b;
-
-  cin >> a >> b;
-
-  cout << a * b / gcd(a, b);
+  for (int i = 1; i < 10000; i++) {
+    if (!(i & (i-1))) cout << i << '\n';
+  }
 }
 
 int main() {
@@ -43,6 +29,5 @@ int main() {
 
   while (t--) {
     solve();
-    cout << '\n';
   }
 }
