@@ -4,15 +4,15 @@ typedef long long ll;
 
 using namespace std;
 
-ll fast_pow(ll x, int n, int mod) {
+ll fast_pow(ll x, int n) {
   if (!n)
     return 1;
 
   if (n % 2)
-    return x * fast_pow(x, n - 1, mod) % mod;
+    return x * fast_pow(x, n - 1);
 
-  ll t = fast_pow(x, n/2, mod) % mod;
-  return t * t % mod;
+  ll t = fast_pow(x, n/2);
+  return t * t;
 }
 
 void solve() {
