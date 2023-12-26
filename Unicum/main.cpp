@@ -7,36 +7,22 @@ using namespace std;
 
 typedef long long ll;
 
+const int INF = 100000;
+
 void solve() {
-  int a, b, c, d, e, f;
-  cin >> a >> b >> c >> d >> e >> f;
+  int min_length = INF;
+  int val = INF;
+  int prev_val = INF;
+  int prev_max_index = -INF;
+  int prev_max = -INF;
+  int index = 0;
 
-  if (b > c)
-    swap(b, c);
+  cin >> val;
+  while (val) {
+    if (prev_val > )
 
-  if (a > b)
-    swap(a, b);
-
-  if (b > c)
-    swap(b, c);
-
-  if (e > f)
-    swap(e, f);
-
-  if (d > e)
-    swap(d, e);
-
-  if (e > f)
-    swap(e, f);
-
-  if (a == d && b == e && c == f) {
-    cout << "Boxes are equal";
-  } else if (a > d && b > e && c > f) {
-    cout << "The first box is larger than the second one";
-  } else if (a < d && b < e && c < f) {
-    cout << "The first box is smaller than the second one";
-  } else {
-    cout << "Boxes are incomparable";
+    cin >> val;
+    index++;
   }
 }
 
