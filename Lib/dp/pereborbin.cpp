@@ -15,21 +15,27 @@ using namespace std;
 typedef  long long ll;
 #define all(x) x.begin(), x.end()
 
-void solve() {
-  int n, m;
-  cin >> n >> m;
-
-  vector<int> step(n);
-
-  for (int i = 0; i < 2 * m; i++) {
-    int x;
-    cin >> x;
-    x--;
-    step[x]++;
+void gen(int i, int n, vector<int>& ans) {
+  if (i == n) {
+    for (auto k : ans) {
+      cout << k;
+    }
+    cout << '\n';
+    return;
   }
+  for (int j = 0; j < 2; j++) {
+    ans.push_back(j);
+    gen(i+1, n, ans);
+    ans.pop_back();
+  }
+}
 
-  for (auto i : step)
-    cout << i << ' ';
+void solve() {
+  int n;
+  cin >> n;
+
+  vector<int> ans;
+  gen(0, n, ans);
 }
 
 int main() {
