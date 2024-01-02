@@ -63,11 +63,9 @@ void solve() {
 
   auto v = cross(a, b);
 
-  ll ka = v.x;
-  ll kb = v.y;
-  ll kc = v.z;
-
-  cout << ka << ' ' << kb << ' ' << kc << ' ' << -(ka * c.x + kb * c.y + kc * c.z);
+  ll ka = -a.x;
+  ll kb = -a.y;
+  ll kc = -a.z;
 }
 
 int main() {
