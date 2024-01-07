@@ -1,0 +1,3 @@
+/home/glrb/Code/C++/SIS/cmake-build-debug/CMakeFiles/sis.dir
+/home/glrb/Code/C++/SIS/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/glrb/Code/C++/SIS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
